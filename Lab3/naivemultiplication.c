@@ -1,7 +1,10 @@
 #include<stdio.h>
+#include<time.h>
 int main()
 {
 int r1,c1,r2,c2,i,j,k;
+clock_t s,e;
+float t;
 printf("Enter the number of rows and columns of first matrix\n");
 scanf("%d%d",&r1,&c1);
 int A[r1][c1];
@@ -43,6 +46,7 @@ printf("%d\t",B[i][j]);
 printf("\n");
 }
 printf("For the matrix multiplication process, we need number of columns of A matrix equal to the number of rows of B matrix\n");
+s=clock();
 if(c1==r2)
 {
 int C[r1][c2];
@@ -72,5 +76,8 @@ else
 {
 printf("Matrix multiplication operation is not possible\n");
 }
+e=clock();
+t=(float)(e-s)/CLOCKS_PER_SEC;
+printf("Time taken for processing is: %f\n",t);
 return 0;
 }
