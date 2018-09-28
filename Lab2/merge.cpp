@@ -1,4 +1,5 @@
 #include<iostream>
+#include<time.h>
 using namespace std;
 //l is lowest index and r is the max index (left and right)
 void merge(int A[],int l,int m ,int r)
@@ -68,6 +69,8 @@ merge(A,l,m,r);
 int main()
 {
 int n,l,r,i;
+clock_t start,end;
+float t;
 cout<<"Enter the array size you want: ";
 cin>>n;
 int A[n];
@@ -77,9 +80,13 @@ cout<<"Enter "<<i+1<<" element of the array: ";
 cin>>A[i];
 }
 cout<<"Lets do merge sorting"<<endl;
+start=clock();
 mergesort(A,0,n-1);
+end=clock();
 for(i=0;i<n;i++)
 {
 cout<<i+1<<" element of the array is: "<<A[i]<<endl;
 }
+t=float(end-start)/CLOCKS_PER_SEC;
+cout<<"Time taken to perform merge sort is: "<<t<<endl;
 }
