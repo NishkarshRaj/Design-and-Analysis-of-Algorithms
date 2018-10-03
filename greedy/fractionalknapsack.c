@@ -52,7 +52,11 @@ while(bag>0)
 {
 for(i=0;i<n;i++)
 {
-if(bag>weight[i])
+///////
+if (bag==0)
+break;
+//////
+else if(bag>weight[i])
 {
 bag=bag-weight[i];
 p=p+profit[i];
