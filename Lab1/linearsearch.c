@@ -31,7 +31,7 @@ scanf("%d",&el);
 start=clock();
 flag=linearsearch(A,el,n);
 end=clock();
-time = (double)(start-end)/CLOCKS_PER_SEC;
+time = (double)start-end/CLOCKS_PER_SEC;
 if(flag==1)
 printf("The element exists in the array");
 else

@@ -51,7 +51,7 @@ lastindex=i;
 }
 }
 end=clock();
-t=(float)(end-s)/CLOCKS_PER_SEC;
+t=(float)end-s/CLOCKS_PER_SEC;
 printf("Time taken for processing is: %f\n",t);
 return 0;
 }

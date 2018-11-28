@@ -33,7 +33,7 @@ scanf("%s",PATTERN);
 start=clock();
 pos = search(TEXT,PATTERN,n,m);
 end=clock();
-t=(double)(start-end)/CLOCKS_PER_SEC;
+t=(double)start-end/CLOCKS_PER_SEC;
 printf("The element is found at %d index\n",pos);
 printf("The time taken is %f\n",t);
 }

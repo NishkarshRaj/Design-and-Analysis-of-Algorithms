@@ -44,7 +44,7 @@ if(flag==0)
 printf("Element does not exist in the array\n");
 else
 printf("Element exist in the array\n");
-t=(double)(end-start)/CLOCKS_PER_SEC;
+t=(double)end-start/CLOCKS_PER_SEC;
 printf("Time taken by the process in seconds is : %f\n",t);
 return 0;
 }

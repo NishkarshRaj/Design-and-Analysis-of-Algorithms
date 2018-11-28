@@ -54,7 +54,7 @@ printf("Lets do the quick sort of given array\n");
 start=clock();
 quicksort(A,0,n-1);
 end=clock();
-time = (double)((start-end)/CLOCKS_PER_SEC);
+time = (double)start-end/CLOCKS_PER_SEC;
 printf("The sorted array is:\n");
 for(i=0;i<n;i++)
 {

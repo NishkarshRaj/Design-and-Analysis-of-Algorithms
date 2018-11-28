@@ -43,7 +43,7 @@ printf("%d\t",C[i][j]);
 }
 printf("\n");
 }
-t=(float)(e-s)/CLOCKS_PER_SEC;
+t=(float)e-s/CLOCKS_PER_SEC;
 printf("Time taken for processing is: %f\n",t);
 return 0;
 }

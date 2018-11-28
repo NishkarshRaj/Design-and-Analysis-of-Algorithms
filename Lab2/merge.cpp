@@ -87,6 +87,6 @@ for(i=0;i<n;i++)
 {
 cout<<i+1<<" element of the array is: "<<A[i]<<endl;
 }
-t=float(end-start)/CLOCKS_PER_SEC;
+t=(float)end-start/CLOCKS_PER_SEC;
 cout<<"Time taken to perform merge sort is: "<<t<<endl;
 }

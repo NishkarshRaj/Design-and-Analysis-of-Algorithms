@@ -51,12 +51,12 @@ B[i]=A[i];
 st = clock();
 bubble_sort(A,n);
 en= clock();
-t= double(en-st)/CLOCKS_PER_SEC;
+t= (double)en-st/CLOCKS_PER_SEC;
 printf("Time taken for Bubble sort is :%f \n",t);
 st = clock();
 selection_sort(B,n);
 en=clock();
-t= (double)(en-st)/CLOCKS_PER_SEC;
+t= (double)en-st/CLOCKS_PER_SEC;
 printf("Time taken for Selection sort is :%f \n",t);
 return 0;
 }

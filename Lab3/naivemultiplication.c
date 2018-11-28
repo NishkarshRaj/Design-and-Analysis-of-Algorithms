@@ -77,7 +77,7 @@ else
 printf("Matrix multiplication operation is not possible\n");
 }
 e=clock();
-t=(float)(e-s)/CLOCKS_PER_SEC;
+t=(float)e-s/CLOCKS_PER_SEC;
 printf("Time taken for processing is: %f\n",t);
 return 0;
 }

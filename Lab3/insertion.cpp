@@ -28,7 +28,7 @@ j=j-1;
 A[j+1]=key;
 }
 e=clock();
-t=float(e-s)/CLOCKS_PER_SEC;
+t=(float)e-s/CLOCKS_PER_SEC;
 cout<<"Sorted Array is:"<<endl;
 for(i=0;i<n;i++)
 {
