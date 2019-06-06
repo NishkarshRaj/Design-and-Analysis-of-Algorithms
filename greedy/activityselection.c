@@ -1,7 +1,10 @@
 #include<stdio.h>
+#include<time.h>
 int main()
 {
 int n,i,j,temp1,temp2,temp3,lastindex;
+clock_t s,end;
+float t;
 printf("Enter the number of activities to be performed: ");
 scanf("%d",&n);
 int anum[n],start[n],final[n];
@@ -12,6 +15,7 @@ scanf("%d",&anum[i]);
 scanf("%d",&start[i]);
 scanf("%d",&final[i]);
 }
+s=clock();
 for(i=0;i<n-1;i++)
 {
 for(j=i+1;j<n;j++)
@@ -46,5 +50,8 @@ printf("%d Activity is performed\n",anum[i]);
 lastindex=i;
 }
 }
+end=clock();
+t=(float)end-s/CLOCKS_PER_SEC;
+printf("Time taken for processing is: %f\n",t);
 return 0;
 }
